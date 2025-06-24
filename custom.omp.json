@@ -10,6 +10,14 @@
           "template": "\u00A0"
         },
         {
+          "type": "os",
+          "style": "diamond",
+          "background": "#272727",
+          "foreground": "#3EC669",
+          "leading_diamond": "\ue0b6",
+          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}"
+        },
+        {
           "background": "#000000",
           "foreground": "#dd1e1e",
           "style": "plain",
@@ -17,14 +25,22 @@
           "type": "root"
         },
         {
+          "type": "session",
+          "style": "diamond",
           "background": "#272727",
           "foreground": "#3EC669",
-          "leading_diamond": "\ue0b6",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "template": "{{ if .SSHSession }} {{ end }}{{ .UserName }}"
+        },
+        {
+          "background": "#272727",
+          "foreground": "#3EC669",
           "properties": {
             "style": "folder"
           },
           "style": "diamond",
-          "template": "\ue5ff {{ .Path }}",
+          "template": "<#000000>\ue0b1 </>\ue5ff {{ .Path }}",
           "trailing_diamond": "\ue0b4",
           "type": "path"
         },
