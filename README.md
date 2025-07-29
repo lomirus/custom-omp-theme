@@ -8,8 +8,7 @@ Just for personal use.
 
 ```nushell
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
-cp ./custom.omp.json /opt/homebrew/opt/oh-my-posh/themes/custom.omp.json
-oh-my-posh init nu --config /opt/homebrew/opt/oh-my-posh/themes/custom.omp.json
+oh-my-posh init nu --config $"(pwd)/custom.omp.json"
 ```
 
 ### Linux
