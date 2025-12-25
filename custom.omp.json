@@ -36,7 +36,7 @@
         {
           "background": "#272727",
           "foreground": "#3EC669",
-          "properties": {
+          "options": {
             "style": "folder"
           },
           "style": "diamond",
@@ -47,8 +47,7 @@
         {
           "background": "#272727",
           "foreground": "#00ff0d",
-          "properties": {
-            "fetch_stash_count": true,
+          "options": {
             "fetch_status": true
           },
           "style": "diamond",
@@ -103,13 +102,13 @@
       "alignment": "right",
       "segments": [
         {
-          "properties": {
-              "style": "roundrock",
-              "always_enabled": true
-            },
-            "style": "diamond",
-            "template": "{{ .FormattedMs }} ",
-            "type": "executiontime"
+          "options": {
+            "style": "roundrock",
+            "always_enabled": true
+          },
+          "style": "diamond",
+          "template": "{{ .FormattedMs }} ",
+          "type": "executiontime"
         },
         {
           "background": "#000000",
