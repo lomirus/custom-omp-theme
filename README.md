@@ -15,6 +15,7 @@ oh-my-posh init nu --config $"(pwd)/custom.omp.json"
 
 ```nushell
 curl -s https://ohmyposh.dev/install.sh | bash -s
+oh-my-posh font install meslo
 cp ./custom.omp.json $"($env.HOME)/.cache/oh-my-posh/themes/custom.omp.json"
 oh-my-posh init nu --config $"($env.HOME)/.cache/oh-my-posh/themes/custom.omp.json"
 ```
